@@ -72,24 +72,23 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
   font-size: 1.5em;
 }
 
-.hello_box {
-  margin: 0;
-  overflow: hidden;
+.info_wrap {
   position: static;
   width: 100%;
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hello_elem {
-  margin: 0;
-  padding: 0;
+.info_box {
+  margin: 50px 0 50px 0;
+  padding: 50px 0 50px 0;
+  overflow: hidden;
   width: 50%;
   min-width: 800px;
-  height: 500px;
+  min-height: 300px;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(100px);
@@ -100,41 +99,13 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
   box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.2);
 }
 
-.hello_elem > img {
+.emoji_none {
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 30%;
   min-width: 300px;
-  position: absolute;
-  top: -150px;;
-}
-
-.emoji_glasses {
-  opacity: 0;
-  transition: opacity 0.2s linear;
-}
-
-.emoji_glasses:hover{
-  opacity: 1;
-}
-
-.hello_elem > p {
-  margin: 0;
-  padding: 0;
-  position: block;
-  color: white;
-  text-align: center;
-}
-
-.hello_title {
-  color: white;
-  font-family: 'Vibur';
-  font-size: 10em;
-}
-
-.hello_subtitle {
-  color: white;
-  font-size: 1.0em;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
 }
 
 .bottom_bar_wrap {
@@ -166,33 +137,6 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
 
 .bottom_bar_wrap:hover {
   padding-bottom: 10px;
-}
-
-.info_wrap {
-  position: static;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.info_box {
-  margin: 50px 0 50px 0;
-  padding: 50px 0 50px 0;
-  overflow: hidden;
-  width: 50%;
-  min-width: 800px;
-  min-height: 300px;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(100px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -238,12 +182,18 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
   height: 50px;
   margin: 10px;
   border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   line-height: 50px;
   transition: 0.5s;
 }
 
 .button:hover {
+  background-color: rgba(0, 0, 0, 0.05  );
+}
+
+.hashtag {
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 5px 20px 7px 20px;
 }
