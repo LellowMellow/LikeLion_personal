@@ -105,7 +105,7 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
   margin: 0;
   width: 25%;
   min-width: 300px;
-  position: absolute;
+  position: fixed;
   top: -30%;
 }
 
