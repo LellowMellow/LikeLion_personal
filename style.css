@@ -89,8 +89,7 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
   padding: 0;
   width: 50%;
   min-width: 800px;
-  height: 50%;
-  min-height: 500px;
+  height: 500px;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(100px);
@@ -103,10 +102,11 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
 
 .hello_elem > img {
   margin: 0;
+  padding: 0;
   width: 25%;
   min-width: 300px;
-  position: fixed;
-  top: -30%;
+  position: absolute;
+  top: -150px;;
 }
 
 .emoji_glasses {
