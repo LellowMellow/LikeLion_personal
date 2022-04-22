@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-/*#ee7752, #e73c7e, #23a6d5, #23d5ab
-#ee7652d7, #e73c7ebe, #23a5d5b9, #23d5abc4*/
+@supports (not ((backdrop-filter:blur(5px)) or (-webkit-backdrop-filter:blur(5px)))) {
+  .blur_filter.blur {
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+html {
+   /* Prevent font scaling in landscape */
+   -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+   -moz-text-size-adjust: none; /*Firefox*/
+   -ms-text-size-adjust: none;  /*Ie*/
+   -o-text-size-adjust: none; /*old versions of Opera*/
+}
 html,
 body {
   margin:0;
   width:100%;
   height:100%;
-  min-width: 1000px;
+  min-width: 1100px;
   font-family: 'Noto Sans KR', sans-serif;
   background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -81,7 +91,7 @@ p {text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);}
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 100px;
+  height: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
