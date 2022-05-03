@@ -77,6 +77,12 @@ p {
   backdrop-filter: blur(100px);
   animation: loading_wrap 4s ease forwards;
 }
+
+.loading_icon {
+  width: 150px;
+  animation: loading_icon 4s ease forwards;
+}
+
 @keyframes loading_wrap {
   0% {
     opacity: 100;
@@ -87,11 +93,6 @@ p {
   100% {
     opacity: 0;
   }
-}
-
-.loading_icon {
-  width: 150px;
-  animation: loading_icon 4s ease forwards;
 }
 @keyframes loading_icon {
   0% {
