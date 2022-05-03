@@ -249,6 +249,42 @@ audio::-webkit-media-controls-timeline {
   right: 10%;
   transform: scaleX(-1);
 }
+.god_cat {
+  width: 500px;
+  border-radius: 100%;
+  z-index: 30;
+  animation: blink-effect-cat 10s step-end infinite;
+}
+
+.nyarlathotep {
+  width: 500px;
+  position: absolute;
+  animation: blink-effect-god 10s step-end infinite;
+  opacity: 0;
+}
+
+.holy_light {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: yellow;
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+  animation: blink-effect-cat 10s step-end infinite;
+}
+
+.nyarlathotep_text {
+  font-size: 40px;
+  color: black;
+  position: fixed;
+  bottom: 5px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: blink-effect-text 10s step-end infinite;
+}
 
 @keyframes blink-effect-cat {
   49% {
@@ -327,42 +363,6 @@ audio::-webkit-media-controls-timeline {
   63% {
     opacity: 0;
   }
-}
-.god_cat {
-  width: 500px;
-  border-radius: 100%;
-  z-index: 30;
-  animation: blink-effect-cat 10s step-end infinite;
-}
-
-.nyarlathotep {
-  width: 500px;
-  position: absolute;
-  animation: blink-effect-god 10s step-end infinite;
-  opacity: 0;
-}
-
-.holy_light {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  border-radius: 100%;
-  background-color: yellow;
-  -webkit-filter: blur(50px);
-  -moz-filter: blur(50px);
-  -o-filter: blur(50px);
-  -ms-filter: blur(50px);
-  filter: blur(50px);
-  animation: blink-effect-cat 10s step-end infinite;
-}
-
-.nyarlathotep_text {
-  font-size: 40px;
-  color: black;
-  position: fixed;
-  bottom: 5px;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  animation: blink-effect-text 10s step-end infinite;
 }
 
 .side_bar {
