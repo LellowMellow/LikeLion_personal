@@ -221,14 +221,14 @@ audio::-webkit-media-controls-timeline {
 }
 
 .left_vibing_cat {
-  width: 25%;
+  width: 400px;
   position: fixed;
   bottom: -30px;
   left: 0px;
 }
 
 .right_vibing_cat {
-  width: 25%;
+  width: 400px;
   position: fixed;
   bottom: -30px;
   right: 0px;
@@ -236,14 +236,14 @@ audio::-webkit-media-controls-timeline {
 }
 
 .left_dancing_cat {
-  width: 20%;
+  width: 300px;
   position: fixed;
   bottom: 30%;
   left: 10%;
 }
 
 .right_dancing_cat {
-  width: 20%;
+  width: 300px;
   position: fixed;
   bottom: 30%;
   right: 10%;
@@ -251,14 +251,76 @@ audio::-webkit-media-controls-timeline {
 }
 
 .god_cat {
-  width: 30%;
+  width: 500px;
   border-radius: 100%;
   z-index: 30;
+  animation: blink-effect-cat 10s step-end infinite;
+}
+
+@keyframes blink-effect-cat {
+  49% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 100;
+  }
+  59% {
+    opacity: 100;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 100;
+  }
+  62% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 100;
+  }
+}
+
+.nyarlathotep {
+  width: 500px;
+  position: absolute;
+  animation: blink-effect-god 10s step-end infinite;
+  opacity: 0;
+}
+
+@keyframes blink-effect-god {
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  51% {
+    opacity: 0;
+  }
+  59% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 100;
+  }
+  61% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 100;
+  }
+  63% {
+    opacity: 0;
+  }
 }
 
 .holy_light {
-  width: 20%;
-  height: 50%;
+  width: 300px;
+  height: 300px;
   position: absolute;
   border-radius: 100%;
   background-color: yellow;
@@ -267,6 +329,43 @@ audio::-webkit-media-controls-timeline {
   -o-filter: blur(50px);
   -ms-filter: blur(50px);
   filter: blur(50px);
+  animation: blink-effect-cat 10s step-end infinite;
+}
+
+.nyarlathotep_text {
+  font-size: 40px;
+  color: black;
+  position: fixed;
+  bottom: 5px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: blink-effect-text 10s step-end infinite;
+}
+
+@keyframes blink-effect-text {
+  49% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  51% {
+    color: black;
+  }
+  59% {
+    color: black;
+  }
+  60% {
+    color: red;
+  }
+  61% {
+    color: black;
+  }
+  62% {
+    color: red;
+  }
+  63% {
+    color: black;
+  }
 }
 
 .side_bar {
