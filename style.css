@@ -250,13 +250,6 @@ audio::-webkit-media-controls-timeline {
   transform: scaleX(-1);
 }
 
-.god_cat {
-  width: 500px;
-  border-radius: 100%;
-  z-index: 30;
-  animation: blink-effect-cat 10s step-end infinite;
-}
-
 @keyframes blink-effect-cat {
   49% {
     opacity: 100;
@@ -283,14 +276,32 @@ audio::-webkit-media-controls-timeline {
     opacity: 100;
   }
 }
-
-.nyarlathotep {
-  width: 500px;
-  position: absolute;
-  animation: blink-effect-god 10s step-end infinite;
-  opacity: 0;
+@keyframes blink-effect-text {
+  49% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  51% {
+    color: black;
+  }
+  59% {
+    color: black;
+  }
+  60% {
+    color: red;
+  }
+  61% {
+    color: black;
+  }
+  62% {
+    color: red;
+  }
+  63% {
+    color: black;
+  }
 }
-
 @keyframes blink-effect-god {
   49% {
     opacity: 0;
@@ -317,6 +328,19 @@ audio::-webkit-media-controls-timeline {
     opacity: 0;
   }
 }
+.god_cat {
+  width: 500px;
+  border-radius: 100%;
+  z-index: 30;
+  animation: blink-effect-cat 10s step-end infinite;
+}
+
+.nyarlathotep {
+  width: 500px;
+  position: absolute;
+  animation: blink-effect-god 10s step-end infinite;
+  opacity: 0;
+}
 
 .holy_light {
   width: 300px;
@@ -339,33 +363,6 @@ audio::-webkit-media-controls-timeline {
   bottom: 5px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   animation: blink-effect-text 10s step-end infinite;
-}
-
-@keyframes blink-effect-text {
-  49% {
-    color: black;
-  }
-  50% {
-    color: red;
-  }
-  51% {
-    color: black;
-  }
-  59% {
-    color: black;
-  }
-  60% {
-    color: red;
-  }
-  61% {
-    color: black;
-  }
-  62% {
-    color: red;
-  }
-  63% {
-    color: black;
-  }
 }
 
 .side_bar {
